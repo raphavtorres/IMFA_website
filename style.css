@@ -45,20 +45,21 @@ body {
 
 /* Estilos de texto */
 
-
 /*navbar*/
 
-#logo {
-    max-width: 13%;
+#img_logo {
+    max-width: 2.5rem;
     max-height: auto;
 }
 
 #div_link_logo {
-    max-width: 80%;
+    width: 100%;
+    padding: 0.5rem;
+    position: fixed;
 }
 
 .navbar-toggler-icon {
-    display: inline-block;
+    display: flex;
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
@@ -119,7 +120,7 @@ section .caixa {
 }
 
 #sect_sobre .caixa h1 {
-    padding: 3em 0 0 0;
+    padding: 3rem 0 0 0;
     color: var(--branco_card);
 }
 
