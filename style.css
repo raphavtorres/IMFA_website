@@ -46,6 +46,11 @@ body {
 /* Estilos de texto */
 
 /*navbar*/
+.navbar {
+    transition: 0.5s;
+    background-color: #3c5e45cb;
+    --bs-navbar-padding-y: 0.3rem;
+}
 
 #img_logo {
     max-width: 2.5rem;
@@ -53,7 +58,8 @@ body {
 }
 
 #div_link_logo {
-    width: 100%;
+    margin-left: 50%;
+    width: 50%;
     padding: 0.5rem;
     position: fixed;
 }
@@ -67,16 +73,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-}
-
-.navbar-brand {
-    padding-top: var(--bs-navbar-brand-padding-y);
-    padding-bottom: var(--bs-navbar-brand-padding-y);
-    margin-right: var(--bs-navbar-brand-margin-end);
-    font-size: var(--bs-navbar-brand-font-size);
-    color: var(--bs-navbar-brand-color);
-    text-decoration: none;
-    white-space: nowrap;
 }
 
 .navbar-nav a {
@@ -146,20 +142,21 @@ section .caixa {
 }
 
 /*sect_contato*/
-.h1_contato {
-    color: var(--branco_fundo);
+#sect_contato {
+    height: 100vh;
+    width: auto;
+    background-color: var(--verde_escuro);
 }
 
-#sect_contato {
-    height: 100%;
-    width: 100%;
-    background-color: var(--verde_escuro);
+.h1_contato {
+    color: var(--branco_fundo);
 }
 
 #article_contato_time {
     padding: 0.5em 2em;
     width: 100%;
 }
+
 .cartao_time {
     display: flex;
     width: 100%;
@@ -206,6 +203,11 @@ section .caixa {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /*navbar*/
+    .navbar {
+        transition: 0.5s;
+        background-color: #3c5e4500;
+    }
+
     #logo {
         max-width: 5%;
         max-height: auto;
