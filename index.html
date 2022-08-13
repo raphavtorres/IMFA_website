@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="shortcut icon" href="images/IMFA SEM FUNDO - 2000px.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>IMFA</title>
 </head>
 
@@ -128,10 +128,35 @@
     </section>
 
     <section id="sect_contato">
-
-        <h1 class="h1_contato text-center p-5">Time De Desenvolvedores</h1>
+        <div id="contato_container">
+            <div id="div_img_contato">
+                <img src="" alt="">
+            </div>
+            <form action="">
+                <h1 class="h1_contato">Contato</h1>
+                <div class="txt_form">
+                    <input type="text" id="nome_usuario" name="nome_usuario" required>
+                    <span></span>
+                    <label for="nome_usuario">Coloque seu nome</label>
+                </div>
+                <div class="txt_form">
+                    <input type="email" id="email_usuario" name="email_usuario" required>
+                    <span></span>
+                    <label for="email_usuario">Coloque seu e-mail</label>
+                </div>
+                <div class="txt_form">
+                    <input type="text" id="msg_usuario" name="msg_usuario" required>
+                    <span></span>
+                    <label for="msg_usuario">Coloque sua mensagem</label>
+                </div>
+                <div id="div_submit">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
 
         <article id="article_contato_time" class="">
+            <h2 class="h2_contato text-center p-5">Time De Desenvolvedores</h2>
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-12 my-4">

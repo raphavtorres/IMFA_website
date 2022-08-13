@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Coves';
-    src: url(fonts/Coves-Bold/Coves\ Bold.otf);
+    src: url(../fonts/Coves-Bold/Coves\ Bold.otf);
 }
 
 /*Cores*/
@@ -24,16 +24,8 @@ html {
     font-size: calc(18px + 0.390625vw);
 }
 
-#div-parallax{
-    height: 100vh !important;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    
-}
-
 body {
-    background-image: url(images/forest\ background.png);
+    background-image: url(../images/forest\ background.png);
     background-color: var(--verde_escuro);
     font-family: 'Coves';
     overflow-x: hidden;
@@ -43,7 +35,13 @@ body {
     background-size: cover;
 }
 
-/* Estilos de texto */
+#div-parallax{
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
 
 /*navbar*/
 .navbar {
@@ -69,7 +67,7 @@ body {
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
-    background-image: url(images/icone-menu.png);
+    background-image: url(../images/icone-menu.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -143,15 +141,106 @@ section .caixa {
 
 /*sect_contato*/
 #sect_contato {
-    height: 100vh;
+    padding-top: 5em;
+    height: 100%;
     width: auto;
     background-color: var(--verde_escuro);
 }
 
-.h1_contato {
+.h1_contato{
+    color: black;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.h2_contato{
     color: var(--branco_fundo);
 }
 
+#contato_container {
+    margin: auto;
+    background: var(--branco_card);
+    width: 90vw;
+}
+
+#contato_container form{
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+form .txt_form{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_form input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_form label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_form span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #3c5e45;
+    transition: .5s;
+}
+
+.txt_form input:focus ~ label, .txt_form input:valid ~ label{
+    top: -5px;
+    color: #3c5e45;
+}
+
+.txt_form input:focus ~ span::before, .txt_form input:valid ~ span::before {
+    width: 100%;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: auto;
+    min-width: 200px;
+    height: 50px;
+    background: var(--verde_escuro);
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 1em;
+    color: var(--branco_card);
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+#div_submit {
+    padding: 30px 0 50px 0;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--verde_claro);
+    border: var(--verde_claro);
+}
+
+/* Time de desenvolvedores */
 #article_contato_time {
     padding: 0.5em 2em;
     width: 100%;
@@ -232,4 +321,12 @@ section .caixa {
     /* .img_cartao{
         border-radius: 0px 10px 10px 0px;
     } */
+    #contato_container {
+        max-width: 800px;
+    }
+
+    input[type="submit"]{
+        min-width: 300px;
+        transition: .5s;
+    }
 }
