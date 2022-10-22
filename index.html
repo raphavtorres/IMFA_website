@@ -8,36 +8,36 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="shortcut icon" href="images/IMFA SEM FUNDO - 2000px.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>IMFA</title>
 </head>
 
 <body>
     <!--Menu-->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <span class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <!--Links menu-->
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="#sect_apresentacao">Home</a>
                     <a class="nav-link" href="#sect_sobre">Sobre</a>
                     <a class="nav-link" href="#">Projeto</a>
                     <a class="nav-link" href="#sect_contato">Contato</a>
                 </div>
-            </div>
-            <!-- logo -->
-            <div id="div_link_logo" class="text-end">
-                <a id="link_logo" class="navbar-brand" href="index.html"><img id="logo"
-                        src="images/IMFA SEM FUNDO - 2000px.png" alt="Logo IMFA"></a>
-            </div>
+            </span>
+        </div>
+        <!-- logo -->
+        <div id="div_link_logo" class="text-end fixed-top"><!-- text-end  -->
+            <a id="link_logo" class="navbar-brand " href="index.html"><img id="img_logo" src="images/IMFA SEM FUNDO - 2000px.png" alt="Logo IMFA"></a>
         </div>
     </nav>
-    <div id="div-parallax" class="d-flex flex-column justify-content-center ">
-        <section id="sect_apresentacao" class="d-flex justify-content-center text-justify align-items-center mt-3">
+    
+    <div id="div-parallax" class="d-flex flex-column justify-content-center">
+        <section id="sect_apresentacao" class="d-flex justify-content-center text-justify align-items-center">
             <article id="artigo_apresentacao" class="p-4 mb-2 w-auto area">
                 <h1 class="text-center">Apresentação</h1>
                 <p>Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, sou preto inteiris,
@@ -128,10 +128,35 @@
     </section>
 
     <section id="sect_contato">
-
-        <h1 class="h1_contato text-center p-5">Time De Desenvolvedores</h1>
+        <div id="contato_container">
+            <div id="div_img_contato">
+                <img src="" alt="">
+            </div>
+            <form action="">
+                <h1 class="h1_contato">Contato</h1>
+                <div class="txt_form">
+                    <input type="text" id="nome_usuario" name="nome_usuario" required>
+                    <span></span>
+                    <label for="nome_usuario">Coloque seu nome</label>
+                </div>
+                <div class="txt_form">
+                    <input type="email" id="email_usuario" name="email_usuario" required>
+                    <span></span>
+                    <label for="email_usuario">Coloque seu e-mail</label>
+                </div>
+                <div class="txt_form">
+                    <input type="text" id="msg_usuario" name="msg_usuario" required>
+                    <span></span>
+                    <label for="msg_usuario">Coloque sua mensagem</label>
+                </div>
+                <div id="div_submit">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
 
         <article id="article_contato_time" class="">
+            <h2 class="h2_contato text-center p-5">Time De Desenvolvedores</h2>
             <div class="container ">
                 <div class="row justify-content-center">
                     <div class="col-12 my-4">
