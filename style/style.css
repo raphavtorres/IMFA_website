@@ -313,6 +313,30 @@ input[type="submit"]:hover{
     visibility: visible;
 }
 
+#faixa{
+    width: 100%;
+    height: 2px;
+    background-color: var(--branco_fundo);
+}
+
+/* sect_parcerias */
+#sect_parcerias{
+    background-color: #3c5e45;
+}
+
+#sect_parcerias .caixa h1 {
+    padding: 3rem 0 0 0;
+    color: var(--branco_card);
+}
+
+.w-72{
+    width: 72%;
+}
+
+.w-28{
+    width: 28%;
+}
+
 /*breakpoints*/
 
 /* Medium devices (tablets, 768px and up) */
