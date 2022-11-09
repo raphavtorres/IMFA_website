@@ -97,6 +97,7 @@ section .caixa {
 
 #artigo_apresentacao{
     color: var(--branco_fundo);
+    margin: 0% 6%;
 }
 
 #artigo_apresentacao h1 {
@@ -130,13 +131,18 @@ section .caixa {
 
 .img_cartao {
     object-fit: cover;
+    
 }
 
 /*sect_carrossel*/
+#sect_carrossel {
+    width: 100vw;
+    background-image: url(../images/florestaIMAGEMarvores.webp);
+}
 .img-carrossel {
     object-fit: cover;
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
+    margin: auto;
 }
 
 /*sect_contato*/
@@ -247,7 +253,6 @@ input[type="submit"]:hover{
 }
 
 .cartao_time {
-    display: flex;
     width: 100%;
     height: 190px;
     background: var(--branco_fundo);
@@ -256,6 +261,7 @@ input[type="submit"]:hover{
 }
 .cartao_time:hover {
     height: 300px;
+    transition: 0.5s;
 }
 
 .col-12 {
@@ -263,12 +269,9 @@ input[type="submit"]:hover{
     width: 14rem;
 }
 
-
 .cartao_time_img {
-    position: relative;
-    left: 50%;
-    top: -50px;
-    transform: translateX(-50%);
+    margin: auto;
+    transform: translateY(-50%);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -279,6 +282,7 @@ input[type="submit"]:hover{
 .cartao_time:hover .cartao_time_img {
     width: 180px;
     height: 180px;
+    transition: 0.5s;
 }
 
 .cartao_time_img img{
@@ -287,6 +291,28 @@ input[type="submit"]:hover{
     object-fit: cover;
     border-radius: 50%;
 }
+
+.nome_participante {
+    text-align: center;
+    transform: translateY(-40%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nome_participante h2 {
+    font-size: 1.5rem;
+}
+
+.nome_participante span {
+    padding-top: 5%;
+    visibility: hidden;
+}
+
+.cartao_time:hover .nome_participante span {
+    transition: 0.5s;
+    visibility: visible;
+}
+
 /*breakpoints*/
 
 /* Medium devices (tablets, 768px and up) */
@@ -318,9 +344,6 @@ input[type="submit"]:hover{
         float: right;
     }
 
-    /* .img_cartao{
-        border-radius: 0px 10px 10px 0px;
-    } */
     #contato_container {
         max-width: 800px;
     }
@@ -328,5 +351,13 @@ input[type="submit"]:hover{
     input[type="submit"]{
         min-width: 300px;
         transition: .5s;
+    }
+
+}
+
+@media (max-width: 768px){
+    .img-carrossel {
+        height: 70vh;
+        width: 100%;
     }
 }
