@@ -40,14 +40,8 @@
         <section id="sect_apresentacao" class="d-flex justify-content-center text-justify align-items-center">
             <article id="artigo_apresentacao" class="p-4 mb-2 w-auto area">
                 <h1 class="text-center">Apresentação</h1>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, sou preto inteiris,
-                    inteiris.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
-                    odio.In elementis mé pra quem é amistosis quis leo.Sapien in monti palavris qui num significa
-                    nadis i pareci latim.</p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, sou preto inteiris,
-                    inteiris.Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat
-                    odio.In elementis mé pra quem é amistosis quis leo.Sapien in monti palavris qui num significa
-                    nadis i pareci latim.</p>
+                <p>Tendo em vista as dificuldades enfrentadas pelos pequenos produtores agrícolas, como a ausência de auxílio tecnológico, além da importância do setor para a alimentação brasileira, percebemos a necessidade do auxílio à esta categoria produtiva.</p>
+                <p>Portanto, nosso projeto ambiciona atenuar tanto males ambientais que assolam produções agrícolas privadas quanto suprimir o desmatamento e as queimadas florestais.</p>
             </article>
         </section>
     </div>
@@ -58,10 +52,7 @@
             <div class="cartao cartao_esquerda w-100 d-lg-flex area">
                 <div class="p-4 align-self-center">
                     <h2>Embarcado</h2>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content
-                        Lorem
-                        ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolorem quod voluptatibus natus
-                        exercitationem tempore, blanditiis quidem iure a</p>
+                    <p>O sistema embarcado foi programado através do aplicativo IDE Arduino e aderente a este circuito foram adicionados: um sensor de gás MQ-135, um módulo bluetooth HC-05, um buzzer e dois resistores.</p>
                 </div>
                 <div>
                     <img class="w-100 h-100 img_cartao" src="images/imagemTeste.png.webp" alt="...">
@@ -70,10 +61,7 @@
             <div class="cartao cartao_direita w-100 d-lg-flex area">
                 <div class="p-4 align-self-center" class="area">
                     <h2>Aplicativo</h2>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content
-                        Lorem
-                        ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolorem quod voluptatibus natus
-                        exercitationem tempore, blanditiis quidem iure a</p>
+                    <p>O aplicativo Android foi desenvolvido com o intuito de proporcionar o controle do sistema embarcado remotamente. Dessa forma, através da aplicação é possível se conectar com o sistema via Bluetooth, o que permite a visualização do status do sensor de fumaça e controle do alarme.</p>
                 </div>
                 <div>
                     <img class="w-100 h-100 img_cartao" src="images/imagemTeste.png.webp" alt="...">
@@ -82,10 +70,7 @@
             <div class="cartao cartao_esquerda w-100 d-lg-flex mb-4 area">
                 <div class="p-4 align-self-center">
                     <h2>IA</h2>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content
-                        Lorem
-                        ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolorem quod voluptatibus natus
-                        exercitationem tempore, blanditiis quidem iure a</p>
+                    <p>Para o futuro do projeto, pretende-se integrar ao sistema de monitoramento uma inteligência artificial capaz de gerenciar as ocasiões críticas sem a necessidade da presença humana. Desta forma, os serviços de intervenção seriam acionados, contendo o perigo, sem que pessoas precisem se envolver. Além disso, a inteligência analisaria os dados coletados pelo sistema, gerando levantamentos sobre os índices dos locais monitorados.</p>
                 </div>
                 <div>
                     <img class="w-100 h-100 img_cartao" src="images/imagemTeste.png.webp" alt="...">
@@ -132,27 +117,30 @@
             <div id="div_img_contato">
                 <img src="" alt="">
             </div>
-            <form action="">
+            <form action="https://formsubmit.co/raphatorrestop@gmail.com" method="POST">
                 <h1 class="h1_contato">Contato</h1>
                 <div class="txt_form">
-                    <input type="text" id="nome_usuario" name="nome_usuario" required>
+                    <input type="text" id="nome_usuario" name="name" required>
                     <span></span>
                     <label for="nome_usuario">Coloque seu nome</label>
                 </div>
                 <div class="txt_form">
-                    <input type="email" id="email_usuario" name="email_usuario" required>
+                    <input type="email" id="email_usuario" name="email" required>
                     <span></span>
                     <label for="email_usuario">Coloque seu e-mail</label>
                 </div>
                 <div class="txt_form">
-                    <input type="text" id="msg_usuario" name="msg_usuario" required>
+                    <input type="text" id="msg_usuario" name="message" required>
                     <span></span>
                     <label for="msg_usuario">Coloque sua mensagem</label>
                 </div>
                 <div id="div_submit">
                     <input type="submit">
                 </div>
+                <input type="hidden" name="_subject" value="Mensagem: Contado IMFA">
+                <input type="text" name="_honey" style="display:none">
             </form>
+
         </div>
 
         <article id="article_contato_time" class="">
@@ -162,7 +150,29 @@
                     <div class="col-12 my-4">
                         <div class="cartao_time">
                             <div class="cartao_time_img">
-                                <img src="images/imagemTeste3.png.webp" alt="">
+                                <img src="images/imagemMariIMFA.png" alt="">
+                            </div>
+                            <div class="nome_participante">
+                                <h2>Maristella Ramalho Rangel<br><span>Front-End</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 my-4">
+                        <div class="cartao_time">
+                            <div class="cartao_time_img">
+                                <img src="images/imagemRaphaelIMFA.png" alt="">
+                            </div>
+                            <div class="nome_participante">
+                                <div></div>
+                                <h2>Raphael Torres<br><span>Front-End</span></h2>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 my-4">
+                        <div class="cartao_time">
+                            <div class="cartao_time_img">
+                                <img src="images/imagemHenriqueIMFA3.jpeg" alt="">
                             </div>
                             <h2></h2>
                         </div>
@@ -170,23 +180,7 @@
                     <div class="col-12 my-4">
                         <div class="cartao_time">
                             <div class="cartao_time_img">
-                                <img src="images/imagemTeste3.png.webp" alt="">
-                            </div>
-                            <!-- <h2>Raphael Valderrama Torres</h2> -->
-                        </div>
-                    </div>
-                    <div class="col-12 my-4">
-                        <div class="cartao_time">
-                            <div class="cartao_time_img">
-                                <img src="images/imagemTeste3.png.webp" alt="">
-                            </div>
-                            <h2></h2>
-                        </div>
-                    </div>
-                    <div class="col-12 my-4">
-                        <div class="cartao_time">
-                            <div class="cartao_time_img">
-                                <img src="images/imagemTeste3.png.webp" alt="">
+                                <img src="images/imagemCesarIMFA.png" alt="">
                             </div>
                             <h2></h2>
                         </div>
