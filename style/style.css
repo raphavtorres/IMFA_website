@@ -288,8 +288,24 @@ input[type="submit"]:hover{
 }
 
 .nome_participante {
+    text-align: center;
+    transform: translateY(-40%);
     max-width: 100%;
     max-height: 100%;
+}
+
+.nome_participante h2 {
+    font-size: 1.5rem;
+}
+
+.nome_participante span {
+    padding-top: 5%;
+    visibility: hidden;
+}
+
+.cartao_time:hover .nome_participante span {
+    transition: 0.5s;
+    visibility: visible;
 }
 
 /*breakpoints*/
